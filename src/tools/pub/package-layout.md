@@ -382,15 +382,23 @@ enchilada/
     main.dart
 {% endprettify %}
 
-Code, tests, docs, what else
-could your users want? Standalone example programs that use your package, of
-course! Those go inside the `example` directory. If the examples are complex
-and use multiple files, consider making a directory for each example. Otherwise,
-you can place each one right inside `example`.
+Code, tests, docs, what else could your users want? Standalone example programs that use your package!  You can [publish examples](https://pub.dartlang.org/packages/json_serializable#pub-pkg-tab-example) to [pub.dartlang.org](https://pub.dartlang.org). 
 
-This is an important place to consider using `package:` to import files from
-your own package. That ensures the example code in your package looks exactly
-like code outside of your package would look.
+Example programs go inside the `example` directory (`example/main.dart`). 
+
+If the examples are complex, create a directory for each (`example/lib/main.dart`). 
+
+`package:` ensures example code inside and outside your package are identical (`example/$package.dart` or `example/lib/$package.dart`).
+
+### Naming conventions 
+- `example/main.dart`
+- `example/example.dart`
+- `example/lib/main.dart`
+- `example/$package.dart`
+- `example/${package}_example.dart`
+- `example/lib/$package.dart`
+
+
 
 ## Internal tools and scripts
 
